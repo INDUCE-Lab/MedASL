@@ -37,6 +37,7 @@ For the sign language gloss and spoken language text, we applied the following a
 
 To prepare the video data for training, we applied the following pre-processing steps: <br><br>
 • Video Frames Extraction: We sample the videos at 30 frames per second (fps) to maintain motion fidelity.<br>
+• Video Keypoints Extraction: We represent every frame by its corresponding keypoints, extracted using Mediapipe python library.<br>
 • Frames Concatenation: We concatenate video frames corresponding to each sentence into a continuous sequence to align with gloss annotations.<br>
 • Padding: We apply zero-padding to align frame lengths across all videos. 
 
